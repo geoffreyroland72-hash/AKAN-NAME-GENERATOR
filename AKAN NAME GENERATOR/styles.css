@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #a855f7;
+    --background-light: #a855f7;
+    --white: #ffffff;
+    
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: url(download.jpg);
+    border-style: dashed;
+    border-radius: 500px;
+    border-top: grey;
+    border-bottom: grey;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    }
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 29px;
+}
+
+p {
+    color:grey;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.gender-selection {
+    border: black;
+    margin: 25px ;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.gender-selection p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.gender-radio-group {
+    display: flex;
+    gap: 20px;
+    color: darkgreen;
+}
+
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+#result-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 5px solid white;
+    text-decoration-color: blue;
+}
+
+#result {
+    color: #d35400;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 800;
+    min-height: 25px; 
+}
